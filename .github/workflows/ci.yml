@@ -46,3 +46,6 @@ jobs:
           DB_URL: jdbc:postgresql://localhost:5432/task_management
           DB_USERNAME: ci_user
           DB_PASSWORD: ci_password
+
+      - name: Build Docker image
+        run: docker build -t task-management:ci .
